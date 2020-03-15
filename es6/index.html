@@ -1,0 +1,519 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.95fc5c268d78821d5a81.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.19.32"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2374911412821725'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+      </script><script>window.dataLayer = window.dataLayer || [];window.dataLayer.push({"platform":"plataforma-reativa"}); (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', 'GTM-KZH8KWD');</script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=a4533d42454f73956ac7c2f680393b78"/><title data-react-helmet="true">Javascript para impacientes | JS para impacientes</title><meta data-react-helmet="true" name="description" content="Resumo de 5 minutos: Fique por dentro de todas as features do ES6"/><meta data-react-helmet="true" property="og:title" content="Javascript para impacientes"/><meta data-react-helmet="true" property="og:description" content="Resumo de 5 minutos: Fique por dentro de todas as features do ES6"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Reativa"/><meta data-react-helmet="true" name="twitter:title" content="Javascript para impacientes"/><meta data-react-helmet="true" name="twitter:description" content="Resumo de 5 minutos: Fique por dentro de todas as features do ES6"/><link as="script" rel="preload" href="/webpack-runtime-9c309f04ec979db119c5.js"/><link as="script" rel="preload" href="/styles-b131b0bb242caf90b780.js"/><link as="script" rel="preload" href="/netlify-identity-widget-0650b31a1c4ef597d787.js"/><link as="script" rel="preload" href="/app-3e13eeba75bed99eaee6.js"/><link as="script" rel="preload" href="/commons-1a199f6ebe99d9854876.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-6ac694f5acd0e5588a5e.js"/><link as="fetch" rel="preload" href="/page-data/es6/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZH8KWD" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">JS para impacientes</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Javascript para impacientes</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">January 06, 2020</p></header><section><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAAEcklEQVQ4yx3R+W/aBhQHcP+wNqaACcSGtIQcJuXIQUlCCJhyh8MGbAzEHAFz2uY+cjDSJtWSNk3arkqbNp20dVOlbtK0v3LepPfT0/u895UeUHT4BmHiGUmfppmX+eJ1sXxdrHyoc5+E5geOv65yN43Wl07/98ODb+PDb+PRH0eDX4e9X7qtu7YACIHwiCBHeHIQpdvRZCtKH5C5k0zxJLM/2WNf5KuvWO6G79z1hl8G/bt+77bTueGEd/XGz7UG0ArhfIBgPdG0IxLb2E1tRxksnsNI1kc38VyLyB2l2Zds47omvK7yL8uNC7Z+WeXeNPj3PA/kncGkLVgj2QJRxu3xElFOBwolvCJQjSbNDfOds2r/qnt8zg8uhNGL+uCsxF/VhZtW57bbA/xrfqfBXUw2koGcaz0SeboXdmYS7izuYkhPrhyrN2m+k262aL7PtH8sdS5q7XdC91N/8Hk4AOyPAxsotqn3WlCvUec2L/os+t1VNLiChm3mmG+DijsyFJbN+/c7ZO3ZvvBG6N0ODj6PRre9PmCe216dx/QPHVrYPq9xGBd8qNazqA2gul0zGtk0xnzWJIkxDbx8xDTOq82b3vBDf/i+3bvmWsCC2qZT26xruNkYwbYzFhNhWaWsaxmPqxR4ymapDs8MJ/XJ24PzT88vv5xdvub7l/XOaVHokiwAT69Dcguz128KZ+XSJJUeJqn+4fDN1auvx4Or56PXf3/958+773/dfb998f63q7seWRPi1aw3l3bvASBohOEtgmgYDFHLE9popvTLiXhUoHGepbvlZLtdGvfYSZMZlqK1bnYYdzC4s1IICh2K/Q/PzGzGYg2Xq7CxmYkSbbe75nEWTAshqzG+boibUcJqiHusqbCdcVuS/q1M3s8e7rUmWQ64f38ZRuyF/QOvr8wL5yfPPhb2TzjuJ8MyOacNL87HFucTpmXSaqJsK6TDkow7s41opRZhaRcDTE0ty2QW3YIXUu6gj/E1S9pgpPXL1OISuYSSOl0cRZPiilUjZbeksSepyA4T2k5jloRrPQHcu6+fVm0kU+1Upp/bP+aaF2RyQFEjnBgmyIOj449EbFgsntH0eNB/V2FP65XTUmHyeDFkWgoCP9xDVbAtGCqH8Xql/pzJjU2rdJ27yOyNna6a+FGXi0skDvO5G5IaJ8gRRR+m0kdabXhW4xNj60HQJJM/kUg3pAo7pMJkCkwx49Y8jMzpCM1sRDdPIUhYqyW1WuLho+jcHA4jfrVGLC8wBaKgxAxK1iVSq1S+LYXscoVrWulRqnyqmcCsJqxGQrOzEbU6jCC7CBKEEbEZ0Gj8COIRL89PgQZQsiJ6qXRTJrfLIKdC4VIqPTNwCFHvquGgaBAkpIZFHIBhnxrxwbBHqXT9j6eWpkAjKFmTSCwyqU0m34HkmAJ6qpoWJzywaheBQzNKr0qMo3SLNT2NQZADguwifiR6EDRIQLMEXHkg+gdbkMwhYoXcCckdSsitUnjELBAkbhQ7mFzukMt3pNKtfwGNwUirZ0b7nQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Js para impacientes"
+        title="Js para impacientes"
+        src="/static/ef7af54e18a8b17709d559037b8f9707/fcda8/js.png"
+        srcset="/static/ef7af54e18a8b17709d559037b8f9707/12f09/js.png 148w,
+/static/ef7af54e18a8b17709d559037b8f9707/e4a3f/js.png 295w,
+/static/ef7af54e18a8b17709d559037b8f9707/fcda8/js.png 590w,
+/static/ef7af54e18a8b17709d559037b8f9707/efc66/js.png 885w,
+/static/ef7af54e18a8b17709d559037b8f9707/302a4/js.png 1080w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h2>Introdução</h2>
+<h3>Motivação</h3>
+<p>Esse documento é um conjunto de “cheatsheet” para javascript que você frequentemente encontrará em projetos modernos e na maioria de exemplos de códigos atuais.</p>
+<p>Esse guia não tem a intenção de te ensinar Javascript do zero, mas sim ajudar desenvolvedores com conhecimentos básicos a se familiarizarem com códigos modernos.</p>
+<blockquote>
+<p><strong>Nota:</strong> Muito dos conceitos apresentados aqui vem de uma atualização do Javascript (ES2015, chamada também de ES6). Você pode achar as novas funcionalidades adicionadas nessa atualização <a href="http://es6-features.org">aqui</a>.</p>
+</blockquote>
+<p>Créditos do texto Original: <a href="https://github.com/mbeaudru">Manuel Beaudru ⚡️</a></p>
+<h3>Material Complementar</h3>
+<p>Se você estiver com dificuldades em entender alguma coisa, eu sugiro que você procure por respostas nos seguintes lugares:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/fr/search?q=">MDN (Mozilla Developer Network)</a></li>
+<li><a href="https://github.com/getify/You-Dont-Know-JS">You don’t know JS (livro)</a></li>
+<li><a href="http://es6-features.org">ES6 Funcionalidades e exemplos</a></li>
+<li><a href="http://wesbos.com/category/es6/">WesBos blog (ES6)</a></li>
+<li><a href="https://www.reddit.com/r/javascript/">Reddit (JavaScript)</a></li>
+<li><a href="https://www.google.com/">Google</a> para encontrar blogs e recursos específicos</li>
+</ul>
+<h2>Sumário</h2>
+<ul>
+<li>
+<p>Modern JavaScript cheatsheet</p>
+<ul>
+<li>Introdução</li>
+<li>Motivação</li>
+<li>Material Complementar</li>
+<li>Tabela de Conteúdos</li>
+<li>Noções</li>
+<li>
+<p>Declaração de variáveis: var, const, let</p>
+<ul>
+<li>Breve explicação</li>
+<li>Exemplo</li>
+<li>Explicação Detalhada</li>
+<li>Material Complementar</li>
+</ul>
+</li>
+<li>
+<p>Função de Seta</p>
+<ul>
+<li>Exemplo</li>
+<li>Explicação Detalhada</li>
+<li>Concisão</li>
+<li>Referência <em>this</em></li>
+<li>Material Útil</li>
+</ul>
+</li>
+<li>
+<p>Parametros padrão de uma Function</p>
+<ul>
+<li>Material Complementar</li>
+</ul>
+</li>
+<li>
+<p>Desestruturação de objetos e arrays</p>
+<ul>
+<li>Explicação com exemplo de código</li>
+<li>Material Útil</li>
+</ul>
+</li>
+<li>
+<p>Metodos de lista - map / filter / reduce</p>
+<ul>
+<li>Exemplo</li>
+<li>Explicação</li>
+<li>Array.prototype.ma</li>
+<li>Array.prototype.filte</li>
+<li>Array.prototype.reduc</li>
+<li>Material Complementar</li>
+</ul>
+</li>
+<li>
+<p>Spread operator ”…”</p>
+<ul>
+<li>Exemplo</li>
+<li>Explicação</li>
+<li>Em interações</li>
+<li>Function rest parameter</li>
+<li>Object properties spreading</li>
+<li>Material Complementar</li>
+</ul>
+</li>
+<li>
+<p>Object property shorthand</p>
+<ul>
+<li>Explicação</li>
+<li>Material Complementar</li>
+</ul>
+</li>
+<li>
+<p>Promises</p>
+<ul>
+<li>Exemplo</li>
+<li>Explicação</li>
+<li>Criando uma promise</li>
+<li>Usando uma promise</li>
+<li>External Resources</li>
+</ul>
+</li>
+<li>
+<p>Template literals</p>
+<ul>
+<li>Sample code</li>
+<li>External resources</li>
+</ul>
+</li>
+<li>
+<p>Imports / Exports</p>
+<ul>
+<li>Explanation with sample code</li>
+<li>External resources</li>
+</ul>
+</li>
+<li>
+<p>JavaScript <em>this</em></p>
+<ul>
+<li>External resources</li>
+</ul>
+</li>
+<li>
+<p>Class</p>
+<ul>
+<li>Samples</li>
+<li>External resources</li>
+</ul>
+</li>
+<li>
+<p>Async Await</p>
+<ul>
+<li>Sample code</li>
+<li>Explanation</li>
+<li>External resources</li>
+</ul>
+</li>
+<li>Glossary</li>
+<li>Scope</li>
+<li>Variable mutation</li>
+</ul>
+</li>
+</ul>
+<h2>Noções</h2>
+<h3>Declaração de variáveis: var, const, let</h3>
+<p>Em JavaScript, existem três palavras-chave disponíveis para declarar uma variável, e cada uma tem suas diferenças. São elas <code class="language-text">var</code>, <code class="language-text">let</code> e <code class="language-text">const</code>.</p>
+<h4>Breve explicação</h4>
+<p>Variáveis declaradas com a palavra-chave <code class="language-text">const</code> não podem ser reatribuídas, enquanto <code class="language-text">let</code> e <code class="language-text">var</code> podem.</p>
+<p>Eu recomendo sempre declarar suas variáveis com <code class="language-text">const</code> por padrão, e com <code class="language-text">let</code> se você precisar <em>modifica-lo</em> ou reatribuí-lo mais tarde.</p>
+<table>
+  <tr>
+    <th></th>
+    <th>Escopo</th>
+    <th>Reatribuível</th>
+    <th>Mutável</th>
+   <th><a href="#tdz_sample">Zona Temporal Inoperante</a></th>
+  </tr>
+  <tr>
+    <th>const</th>
+    <td>Bloco</td>
+    <td>Não</td>
+    <td><a href="#const_mutable_sample">Sim</a></td>
+    <td>Sim</td>
+  </tr>
+  <tr>
+    <th>let</th>
+    <td>Bloco</td>
+    <td>Sim</td>
+    <td>Sim</td>
+    <td>Sim</td>
+  </tr>
+   <tr>
+    <th>var</th>
+    <td>Função</td>
+    <td>Sim</td>
+    <td>Sim</td>
+    <td>Não</td>
+  </tr>
+</table>
+<h4>Exemplo</h4>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token string">"Nick"</span><span class="token punctuation">;</span>
+person <span class="token operator">=</span> <span class="token string">"John"</span> <span class="token comment">// Irá ocorrer um erro, person não pode ser reatribuída</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">let</span> person <span class="token operator">=</span> <span class="token string">"Nick"</span><span class="token punctuation">;</span>
+person <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span> <span class="token comment">// "John", a reatribuição é permitida com let</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<h4>Explicação Detalhada</h4>
+<p>O <a href="#scope_def"><em>escopo</em></a> de uma variável grosseiramente significa “onde esta variável está disponível no código”.</p>
+<h5>var</h5>
+<p>Variáveis declaradas com <code class="language-text">var</code> são <em>função escopada</em>, significando que quando uma variável é criada em uma função, tudo naquela função pode acessar essa variável. Além disso, uma variável de <em>função escopada</em> criada em uma função não pode ser acessada fora desta função.</p>
+<p>Eu recomendo que você imagine isso, como se uma variável <em>X escopada</em> significasse que essa variável era uma propriedade de X.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> myVar <span class="token operator">=</span> <span class="token string">"Nick"</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "Nick" - myVar é acessível dentro da função.</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Lança um ReferenceError, myVar não está acessível fora da função.</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Ainda focado na variável de escopo, aqui está um exemplo mais sutil:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> myVar <span class="token operator">=</span> <span class="token string">"Nick"</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> myVar <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "John"</span>
+    <span class="token comment">// na verdade, sendo myVar do escopo da função, nós simplesmente apagamos o valor anterior do myVar "Nick" para "John"</span>
+  <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "John" - veja como as instruções no bloco if afetaram esse valor</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Lança um ReferenceError, myVar não é acessível fora da função.</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Além disso, variáveis declaradas <em>var</em> são movidas para o topo do escopo na execução. É o que chamamos de <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting">içando a var</a>.</p>
+<p>Esta parte do código:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span> <span class="token comment">// undefined -- sem erro lançado</span>
+<span class="token keyword">var</span> myVar <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>é entendido na execução como:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">var</span> myVar<span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span> <span class="token comment">// undefined -- sem erro lançado</span>
+myVar <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<h5>let</h5>
+<p><code class="language-text">var</code> e <code class="language-text">let</code> são quase os mesmos, mas variáveis declaradas com <code class="language-text">let</code></p>
+<ul>
+<li>são <em>escopado em bloco</em></li>
+<li><strong>não</strong> são acessíveis antes de serem atribuídas</li>
+<li>não podem ser re-declaradas no mesmo escopo</li>
+</ul>
+<p>Vamos ver o impacto do escopo em bloco em nosso exemplo anterior:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> myVar <span class="token operator">=</span> <span class="token string">"Nick"</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> myVar <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "John"</span>
+    <span class="token comment">// na verdade, myVar sendo escopada em bloco, nós criamos uma nova variável myVar.</span>
+    <span class="token comment">// essa variável não é acessível fora do bloco e é totalmente independente</span>
+    <span class="token comment">// da primeira myVar criada !</span>
+  <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "Nick", veja como as instruções no bloco IF NÃO afetou este valor</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// lançado um ReferenceError, myVar não é acessível fora da fucnção.</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><a name="tdz_sample"></a> Agora, o que significa para as variáveis <em>let</em> (e <em>const</em>) não estarem acessíveis antes de serem atribuídas:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span> <span class="token comment">// lança um ReferenceError !</span>
+<span class="token keyword">let</span> myVar <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>Em contraste com as variáveis <em>var</em>, se você tentar ler ou escrever em uma variável <em>let</em> ou <em>const</em> antes de serem atribuídos, um erro será gerado. Esse fenômeno é freqüentemente chamado <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Temporal_Dead_Zone_and_errors_with_let"><em>Zona Temporal Inoperante</em></a> ou <em>TDZ</em>.</p>
+<blockquote>
+<p><strong>Nota:</strong> Tecnicamente, as declarações de <em>let</em> e <em>const</em> também estão sendo içadas, mas não a sua atribuição. Uma vez que elas são feitas para que elas não possam ser usados antes da atribuição, ela intuitivamente parece que não há içamento, mas existe. Saiba mais sobre isso <a href="http://jsrocks.org/2015/01/temporal-dead-zone-tdz-demystified">explicação muito detalhada aqui</a> se quiser saber mais.</p>
+</blockquote>
+<p>Além disso, você não pode re-declarar uma variável <em>let</em>:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">let</span> myVar <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> myVar <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">// Retorna um SyntaxError</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<h5>const</h5>
+<p>Variáveis declaradas <code class="language-text">const</code> agem como variáveis <em>let</em>, mas elas não podem ser reatribuídas.</p>
+<p>Para resumir, variáveis <em>const</em>:</p>
+<ul>
+<li>são <em>escopado em bloco</em></li>
+<li>não são acessíveis antes de serem atribuídos</li>
+<li>não podem ser re-declaradas no mesmo escopo</li>
+<li>não podem ser reatribuídas</li>
+</ul>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> myVar <span class="token operator">=</span> <span class="token string">"Nick"</span><span class="token punctuation">;</span>
+myVar <span class="token operator">=</span> <span class="token string">"John"</span> <span class="token comment">// lança um erro, reatribuição não é permitido</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> myVar <span class="token operator">=</span> <span class="token string">"Nick"</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> myVar <span class="token operator">=</span> <span class="token string">"John"</span> <span class="token comment">// lança um erro, re-declaração não é permitida</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p><a name="const_mutable_sample"></a> Mas há uma sutileza : variáveis <code class="language-text">const</code> não são <a href="#mutation_def"><strong>imutáveis</strong></a> ! Concretamente, Isto significa que variáveis <em>objetos</em> e <em>arrays</em> declaradas com <code class="language-text">const</code> <strong>podem</strong> ser mutadas.</p>
+<p>Para objetos:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'Nick'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'John'</span> <span class="token comment">// isto irá funcionar! A variável objeto person não é completamente reatribuída, mas mutada</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token comment">// "John"</span>
+person <span class="token operator">=</span> <span class="token string">"Sandra"</span> <span class="token comment">// lança um erro, porque a reatribuição não é permitida com variáveis declaradas com const</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Para arrays:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'John'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// isto irá funcionar! A variável array person não é completamente reatribuída, mas mutada</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// "John"</span>
+person <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Nick"</span><span class="token punctuation">]</span> <span class="token comment">// lança um erro, porque a reatribuição não é permitida com variáveis declaradas com array</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<h4>Material Complementar</h4>
+<ul>
+<li><a href="http://wesbos.com/javascript-scoping/">Como let e const são escopados em JavaScript - WesBos</a></li>
+<li><a href="http://jsrocks.org/2015/01/temporal-dead-zone-tdz-demystified">Zona temporal Inoperante (TDZ) desmistificada</a></li>
+</ul>
+<h3><a name="função-de-seta"></a> Função de seta</h3>
+<p>A atualização do JavaScript ES6 introduziu <em>funções de seta</em>, que é outra maneira de declarar e usar funções. Aqui estão os benefícios que elas trazem:</p>
+<ul>
+<li>Mais conciso</li>
+<li><em>this</em> é retirado dos arredores</li>
+<li>retorno implícito</li>
+</ul>
+<h4>Exemplo de código</h4>
+<ul>
+<li>Concisão e retorno implícito</li>
+</ul>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">double</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">// Forma tradicional</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">double</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 4</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">double</span> <span class="token operator">=</span> <span class="token parameter">x</span> <span class="token operator">=></span> x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// A mesma função escrita como uma função de seta com retorno implícito</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">double</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 4</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<ul>
+<li>Referência <em>this</em></li>
+</ul>
+<p>Em uma função de seta, <em>this</em> é igual ao valor <em>this</em> do contexto de execução envolvente. Basicamente, com as funções de seta, você não precisa fazer o truque “that/self = this” antes de chamar uma função dentro de uma função.</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>myVar <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>myVar<span class="token operator">++</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>myVar<span class="token punctuation">)</span> <span class="token comment">// 1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h4>Explicação detalhada</h4>
+<h5>Concisão</h5>
+<p>As funções de seta são mais concisas do que as funções tradicionais em diversas maneiras. Vamos rever todos os casos possíveis:</p>
+<ul>
+<li>Retorno implícito VS explícito</li>
+</ul>
+<p>Um <strong>retorno explícito</strong> é uma função em que a palavra-chave <em>return</em> é usada em seu corpo.</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js">  <span class="token keyword">function</span> <span class="token function">double</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// esta função retorna explicitamente x * 2, a palavra-chave *retorno*  é usada</span>
+  <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>Na maneira tradicional de escrever funções, o retorno sempre foi explícito. Mas com funções de seta, você pode fazer <em>retorno implícito</em>, o que significa que você não precisa usar a palavra-chave <em>return</em> para retornar um valor.</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js">  <span class="token keyword">const</span> <span class="token function-variable function">double</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// um retorno explícito aqui</span>
+  <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>Uma vez que esta função apenas retorna algo (sem instruções antes da palavra-chave <em>return</em>), podemos fazer um retorno implícito.</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js">  <span class="token keyword">const</span> <span class="token function-variable function">double</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token operator">=></span> x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// Correto, retorna x*2</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Para fazer isso, só precisamos <strong>remover os colchetes</strong> e a palavra-chave <strong>return</strong>. É por isso que é chamado de <em>retorno implícito</em>, a palavra-chave <em>return</em> não existe, mas essa função retornará <code class="language-text">x * 2</code>.</p>
+<blockquote>
+<p><strong>Nota:</strong> Se sua função não retornar um valor (com <em>efeitos colaterais</em>), ele não faz um retorno explícito nem implícito.</p>
+</blockquote>
+<p>Além disso, se você quiser retornar implicitamente um <em>objeto</em>, você <strong>deve ter parênteses em torno dele</strong>, pois isso entrará em conflito com as chaves do bloco:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">getPerson</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">"Nick"</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">24</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">getPerson</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// { name: "Nick", age: 24 } -- objeto implicitamente retornado pela função de seta</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<ul>
+<li>Só um argumento</li>
+</ul>
+<p>Se a sua função apenas tiver um parâmetro, você pode omitir os parênteses à sua volta. Se pegarmos o código <em>double</em> acima:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js">  <span class="token keyword">const</span> <span class="token function-variable function">double</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token operator">=></span> x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// esta função de seta apenas leva um parâmetro</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Parênteses ao redor do parâmetro podem ser evitados:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js">  <span class="token keyword">const</span> <span class="token function-variable function">double</span> <span class="token operator">=</span> <span class="token parameter">x</span> <span class="token operator">=></span> x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// esta função de seta tem apenas um parâmetro</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<ul>
+<li>Nenhum argumento</li>
+</ul>
+<p>Quando não há argumento fornecido para uma função de seta, você precisa fornecer parênteses, ou não será uma sintaxe válida.</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js">  <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> <span class="token comment">// parênteses são fornecidos, tudo está ok</span>
+    <span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js">  <span class="token operator">=></span> <span class="token punctuation">{</span> <span class="token comment">// Sem parênteses, isso não funcionará!</span>
+    <span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<h5>Referência <em>this</em></h5>
+<p>Para entender essa sutileza introduzida com funções de seta, você deve saber como <a href="#this_def">this</a> se comporta em JavaScript.</p>
+<p>Em funções de seta, <em>this</em> é igual ao valor <em>this</em> do contexto de execução envolvente. O que significa que uma função de seta não cria um novo <em>this</em>, Ela pega do seu entorno em vez disso.</p>
+<p>Sem uma função de seta, se você quisesse acessar uma variável de <em>this</em> em uma função dentro de outra função, você tinha que usar <em>that = this</em> ou <em>self = this</em>.</p>
+<p>Por exemplo, usando a função setTimeout dentro de myFunc:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>myVar <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> that <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span> <span class="token comment">// that = this (truque)</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// Um novo *this* é criado neste escopo de função</span>
+      that<span class="token punctuation">.</span>myVar<span class="token operator">++</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>that<span class="token punctuation">.</span>myVar<span class="token punctuation">)</span> <span class="token comment">// 1</span>
+
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>myVar<span class="token punctuation">)</span> <span class="token comment">// undefined -- veja a declaração da função acima</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token number">0</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Mas com função de seta, <em>this</em> é retirado do seu entorno:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>myVar <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span>
+    <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> <span class="token comment">// this é retirado do entorno, o que significa de myFunc aqui</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>myVar<span class="token operator">++</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>myVar<span class="token punctuation">)</span> <span class="token comment">// 1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token number">0</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h4>Material Útil</h4>
+<ul>
+<li><a href="http://wesbos.com/arrow-functions/">Arrow functions introduction (Introdução à Funções de Seta) - WesBos</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">JavaScript arrow function - MDN</a></li>
+<li><a href="https://hackernoon.com/javascript-es6-arrow-functions-and-lexical-this-f2a3e2a5e8c4">Arrow function and lexical <em>this</em></a></li>
+</ul>
+<h3>Parametros padrão de uma Function</h3>
+<p>A partir da atualização do JavaScript ES2015, você pode definir um valor padrão para os parâmetros da função usando a seguinte sintaxe:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token parameter">x <span class="token operator">=</span> <span class="token number">10</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 10 -- nenhum valor é fornecido então o valor padrão de x que é 10 será atribuído a x em myFunc</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 5 -- um valor é fornecido então x é igual a 5 em myFunc</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 10 -- um valor undefined é fornecido então o valor padrão é atribuído para x</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// null -- um valor (null) é fornecido, veja abaixo para mais detalhes neste caso</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>O valor de parâmetro padrão é aplicado em duas e somente duas situações:</p>
+<ul>
+<li>Nenhum parâmetro fornecido</li>
+<li><em>undefined</em> parâmetro fornecido</li>
+</ul>
+<p>Em outras palavras, se você passar um <em>null</em> o parâmetro padrão <strong>não irá ser aplicado</strong>.</p>
+<blockquote>
+<p><strong>Nota:</strong> Atribuição de valor padrão também pode ser usada com parâmetros desestruturados (veja o próximo conceito para ver um exemplo)</p>
+</blockquote>
+<h4>Material Complementar</h4>
+<ul>
+<li><a href="http://es6-features.org/#DefaultParameterValues">Default parameter value - ES6 Features</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters">Default parameters - MDN</a></li>
+</ul>
+<h3>Desestruturação de objetos e arrays</h3>
+<p><em>Desestruturação</em> é uma maneira conveniente de criar novas variáveis extraindo alguns valores de dados armazenados em objetos ou arrays (matrizes).</p>
+<p>Para nomear alguns casos de uso, <em>desestruturação</em> pode ser usado para desestruturar parâmetros de função ou <em>this.props</em> em projetos React, por exemplo.</p>
+<h4>Explicação com exemplo de código</h4>
+<ul>
+<li>Objeto</li>
+</ul>
+<p>Vamos considerar o seguinte objeto para todos os exemplos:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">{</span>
+  firstName<span class="token operator">:</span> <span class="token string">"Nick"</span><span class="token punctuation">,</span>
+  lastName<span class="token operator">:</span> <span class="token string">"Anderson"</span><span class="token punctuation">,</span>
+  age<span class="token operator">:</span> <span class="token number">35</span><span class="token punctuation">,</span>
+  sex<span class="token operator">:</span> <span class="token string">"M"</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Sem desestruturação</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> first <span class="token operator">=</span> person<span class="token punctuation">.</span>firstName<span class="token punctuation">;</span>
+<span class="token keyword">const</span> age <span class="token operator">=</span> person<span class="token punctuation">.</span>age<span class="token punctuation">;</span>
+<span class="token keyword">const</span> city <span class="token operator">=</span> person<span class="token punctuation">.</span>city <span class="token operator">||</span> <span class="token string">"Paris"</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>Com desestruturação, tudo em uma única linha:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span> firstName<span class="token operator">:</span> first<span class="token punctuation">,</span> age<span class="token punctuation">,</span> city <span class="token operator">=</span> <span class="token string">"Paris"</span> <span class="token punctuation">}</span> <span class="token operator">=</span> person<span class="token punctuation">;</span> <span class="token comment">// É isso ! :)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token comment">// 35 -- uma nova variável age é criada e é igual a person.age</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>first<span class="token punctuation">)</span> <span class="token comment">// "Nick" -- uma nova variável first é criada e é igual person.firstName</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>firstName<span class="token punctuation">)</span> <span class="token comment">// ReferenceError -- person.firstName existe MAS a nova variável criada é nomeada primeiro</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>city<span class="token punctuation">)</span> <span class="token comment">// "Paris" -- uma nova variável city é criada e uma vez que person.city é indefinida, city é igual ao valor padrão fornecido "Paris".</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><strong>Nota :</strong> Em <code class="language-text">const { age } = person;</code>, os colchetes depois da palavra-chave <em>const</em> não são usados para declarar um objeto nem um bloco, mas é a sintaxe da <em>desestruturação</em>.</p>
+<ul>
+<li>Parâmetros de função</li>
+</ul>
+<p><em>Desestruturação</em> é freqüentemente usado para desestruturar parâmetros de objetos em funções.</p>
+<p>Sem desestruturação</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">joinFirstLastName</span><span class="token punctuation">(</span><span class="token parameter">person</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> firstName <span class="token operator">=</span> person<span class="token punctuation">.</span>firstName<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> lastName <span class="token operator">=</span> person<span class="token punctuation">.</span>lastName<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> firstName <span class="token operator">+</span> <span class="token string">'-'</span> <span class="token operator">+</span> lastName<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">joinFirstLastName</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "Nick-Anderson"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>Ao desestruturar o parâmetro de objeto <em>person</em>, obtemos uma função mais concisa:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">function</span> <span class="token function">joinFirstLastName</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> firstName<span class="token punctuation">,</span> lastName <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// criamos variáveis firstName e lastName por desestruturação person parameter</span>
+  <span class="token keyword">return</span> firstName <span class="token operator">+</span> <span class="token string">'-'</span> <span class="token operator">+</span> lastName<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">joinFirstLastName</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "Nick-Anderson"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>A desestruturação é ainda mais agradável para usar com [funções de seta] (#função-de-seta):</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">joinFirstLastName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> firstName<span class="token punctuation">,</span> lastName <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> firstName <span class="token operator">+</span> <span class="token string">'-'</span> <span class="token operator">+</span> lastName<span class="token punctuation">;</span>
+
+<span class="token function">joinFirstLastName</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "Nick-Anderson"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<ul>
+<li>Array (Matriz)</li>
+</ul>
+<p>Vamos considerar a seguinte array:</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> myArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"a"</span><span class="token punctuation">,</span> <span class="token string">"b"</span><span class="token punctuation">,</span> <span class="token string">"c"</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>Sem desestruturação</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> x <span class="token operator">=</span> myArray<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> y <span class="token operator">=</span> myArray<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>Com desestruturação</p>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span> <span class="token operator">=</span> myArray<span class="token punctuation">;</span> <span class="token comment">// É isso !</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token comment">// "a"</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span> <span class="token comment">// "b"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
+<h4>Material Útil</h4>
+<ul>
+<li><a href="http://es6-features.org/#ArrayMatching">ES6 Features - Destructuring Assignment (Funcionalidades ES6 - Atribuição de Destruturação)</a></li>
+<li><a href="http://wesbos.com/destructuring-objects/">Destructuring Objects - WesBos</a></li>
+<li><a href="http://exploringjs.com/es6/ch_destructuring.html">ExploringJS - Destructuring</a></li>
+</ul>
+<h1>CONTINUA…</h1>
+<p>Créditos do texto Original: <a href="https://github.com/mbeaudru">Manuel Beaudru ⚡️</a></p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAACwUlEQVQ4y42UWU8UQRDHefFjGL+Arz6aKIlHMOFNXiSBqFEw0ZiIbtCAIYTIIYeGQ1dwOeKycigQD1DX5QwJEoSNirLdPdPbMz3dM73LqfFNaxjDrhiBpDLpY37dVf+q6gxKyM6mx4i2af9uZeyEIWKa2FlB9jKCr2FgHe8NBtISeH6UhnxWoFB2+0R0knKBYX1HGLuucguHHxt3j6mX98yxIBuq5jAeDzLOU/x2GGIj3wiL4+iUXpWpYlEtsY6cZaTW0OcZvTpTLc5qjBHP/xQMc8DgYIMRiLC/zBqo4M4qwova3FtKNaLWUc8ta6iGS4X1WBoMJFhyA828iFcdSUTaje4b1vuAYUn3rECBbDsvl3+ikWYz5BN2AmkpGJO45k4GK83qoyroE71l1mgn67oqkt8R/kqEg1vPyoE7PFhkjTQbMPXCzvCuNQziz7P9efLTtP4xTOtPKRjUgELdDKKN6/ADrjycqDup4hr27nNhLyVTfaz1nNz4FYNoQef+Mg5SQ7T1WarrioCBWkXPynlfqQXibRWMC4MbIy1mQ7YKB9jzCt5bakFVRNrZu0eGwfDTYqvljC0TaLTT6LwshIP0FIwJo+TLB32wivfctK4dWJnqZYEC0Zxjh9sM2IVU+fPlRIhND7D2QilV2s1e9YKqkz2s8bTzutF802KCvCAVhKNtbkU6WG8Jf3Xf7LvNZeJvGCbgecclWXIwGbgoyw8lF8YpKESWiAdDYYHDTTmOt75V4X/yDKnSlsjsMJ0L09rjCtQCxost+QMBeX3/CpSHsHF6e6WKBPIBANQGpHq4yRQKw4qGSKjYurBvLVgkIAvpXbG9POHUphy7Idvx59sPc+0HuXZdlqo9ocaeMCDhIPrfloTLqcvPR+jCGI1O6NFxHdoAZIOuhrLf5TFwldCIaeAtY3G3sbe9AXt6SXa133dG1a0ljAUNAAAAAElFTkSuQmCC" alt="Reativa" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/d2742f2dddd737dec60ee2a5226edb06/8ba1e/icon.png 1x,
+/static/d2742f2dddd737dec60ee2a5226edb06/f937a/icon.png 1.5x,
+/static/d2742f2dddd737dec60ee2a5226edb06/71eb7/icon.png 2x" /><img loading="lazy" width="50" height="50" srcset="/static/d2742f2dddd737dec60ee2a5226edb06/8ba1e/icon.png 1x,
+/static/d2742f2dddd737dec60ee2a5226edb06/f937a/icon.png 1.5x,
+/static/d2742f2dddd737dec60ee2a5226edb06/71eb7/icon.png 2x" src="/static/d2742f2dddd737dec60ee2a5226edb06/8ba1e/icon.png" alt="Reativa" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p><strong>Está curtindo os conteúdos da Reativa? Quer que a gente te ajude a ser um dev melhor?<!-- --> </strong> <!-- --> <a href="http://bit.ly/form-reativa" target="_blank" rel="noopener noreferrer">Deixe seu melhor email aqui.</a> </p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/javascript-como-fazer-CSVToArray/">← <!-- -->como usar o CSVToArray no javascript es6</a></li><li><a rel="next" href="/interview-1/">1: Qual é a diferença entre undefined e null?<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Sua melhor escolha para aprender programação:<!-- --> <a href="https://reativa.dev">Reativa Tecnologia</a></footer></div></div></div><script src="https://platform.twitter.com/widgets.js"></script><script src="https://www.instagram.com/embed.js"></script><script src="https://embedr.flickr.com/assets/client-code.js"></script><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-155080700-5', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/es6/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-3e13eeba75bed99eaee6.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-6ac694f5acd0e5588a5e.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e15283bd90c08fe256c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-72ece3d8a1a4c12391d2.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-6ac694f5acd0e5588a5e.js" async=""></script><script src="/commons-1a199f6ebe99d9854876.js" async=""></script><script src="/app-3e13eeba75bed99eaee6.js" async=""></script><script src="/netlify-identity-widget-0650b31a1c4ef597d787.js" async=""></script><script src="/styles-b131b0bb242caf90b780.js" async=""></script><script src="/webpack-runtime-9c309f04ec979db119c5.js" async=""></script></body></html>
